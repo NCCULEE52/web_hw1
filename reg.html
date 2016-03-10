@@ -20,6 +20,11 @@
 	legend {
 		font-size: 150%;
 	}
+	#t1{
+		
+		width:100px;
+	}
+	
 	</style>
 </head>
 <body>
@@ -40,8 +45,8 @@
 				<td>2016校園徵才活動-【遠見天下文化徵才說明會】</td>
 			</tr>
 			<tr>
-				<td class="title" width="5%" >簡介</td>
-				<td width="52%" >
+				<td class="title"  id="t1" >簡介</td>
+				<td >
 					【遠見天下文化徵才說明會】
 					遠見天下是知識的先驅者，議題深入各個層面，從國際政治、商業財經、自然環保至社會教育等，藉由他們的報導，我們可以即時掌握世界的潮流趨勢，快速得知時事的脈絡變化。遠見天下是台灣目前最具公信力和影響力的文化事業群，透過他們研究調查所公佈的相關民調具有一定的準確性，遠見天下文化出版企業不僅是促進台灣社會發展的監督人，亦是台灣資訊的重要科技傳媒。
 					遠見天下經由多年的努力，奠定不可撼動的媒體王國稱號，旗下創立了許多文化出版公司，包含遠見雜誌、93巷人文空間、小天下出版公司等多樣事業。一直以「傳播進步觀念，豐富閱讀世界」的經營理念，紀錄台灣的歷史歲月，為政府、企業領導人與民間、中產階級搭起溝通的橋樑，成為企業因應政經巨變的出路引航員，是維持台灣公平社會的主要批判者。
@@ -55,15 +60,15 @@
 		<legend><strong>報名填寫</strong></legend>
 		<p>
 			性別 :
-			<label for="male">男</label>
+			<label >男</label>
 			<input type="radio" name="sex"  value="male" />
-			<label for="female">女</label>
+			<label >女</label>
 			<input type="radio" name="sex"  value="female" />
 		</p>
 		<p>
-			<label for="name">姓名 :</label>
+			<label >姓名 :</label>
 			<!-- 文字框-->
-			<input cols="10" rows="1"   placeholder="莉莉安"  maxlength="10" required/input>
+			<input placeholder="莉莉安"  maxlength="10" required/>
 		</p>
 		<p>學院：
 			<!--<fieldset> </fieldset>-->
@@ -80,18 +85,18 @@
 			</select>
 		</p>
 		<p>		
-			<label for="cellphone">手機 :</label>
+			<label >手機 :</label>
 			<input name="phone" type="text" id="phone" placeholder="Your phone" maxlength="10" required pattern="[0-9]{10}"/>
 		</p>
 		<p>
-			<label for="email">Email:</label>
+			<label >Email:</label>
 			<!-- 輸入框 type, name, id, value, tabindex, password-->
 			<input name="email" type="email" id="email"  placeholder="you@somewhere.com" required/>
 		</p>
 		<p>
-			<label for="birthday">生日 :</label>
+			<label >生日 :</label>
 			<!-- 文字框-->
-			<input cols="10" rows="1"   placeholder="201XX6/03/07"  maxlength="11" /input>
+			<input    placeholder="201XX6/03/07"  maxlength="11" />
 		</p>
 	</fieldset>
 	<div>
