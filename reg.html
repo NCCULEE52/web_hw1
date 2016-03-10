@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel=stylesheet type="text/css" href="quiz1.css"> 
+	<title>政大活動線上報名系統</title>
+	<style type="text/css">
+	.title{
+		background-color: yellow;
+	}
+	header{
+		background-color: #FFCCCC;
+	}
+	p.serif {
+		font-family: "Times New Roman", Times, serif;
+	}
+	p{
+		color:#181818 ;
+	}
+	legend {
+		font-size: 150%;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		國立政治大學 線上報名系統
+	</header>
+	<a href="http://www.nccu.edu.tw/">
+		<img  src="NCCU_Name.png" width="250" alt="nccupic">
+	</a>
+	<fieldset>
+		<table>
+			<tr>
+				<td class="title">代碼</td>
+				<td>123456&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="title">名稱</td>
+				<td>2016校園徵才活動-【遠見天下文化徵才說明會】</td>
+			</tr>
+			<tr>
+				<td class="title" width="5%" >簡介</td>
+				<td width="52%" >
+					【遠見天下文化徵才說明會】
+					遠見天下是知識的先驅者，議題深入各個層面，從國際政治、商業財經、自然環保至社會教育等，藉由他們的報導，我們可以即時掌握世界的潮流趨勢，快速得知時事的脈絡變化。遠見天下是台灣目前最具公信力和影響力的文化事業群，透過他們研究調查所公佈的相關民調具有一定的準確性，遠見天下文化出版企業不僅是促進台灣社會發展的監督人，亦是台灣資訊的重要科技傳媒。
+					遠見天下經由多年的努力，奠定不可撼動的媒體王國稱號，旗下創立了許多文化出版公司，包含遠見雜誌、93巷人文空間、小天下出版公司等多樣事業。一直以「傳播進步觀念，豐富閱讀世界」的經營理念，紀錄台灣的歷史歲月，為政府、企業領導人與民間、中產階級搭起溝通的橋樑，成為企業因應政經巨變的出路引航員，是維持台灣公平社會的主要批判者。
+					如果你對專業領域或者文書編採有相當濃厚的興趣，歡迎來報名說明會場次，深入了解遠見天下如何利用新科技傳播瞬息萬變的世界，讓閱讀豐盈人們的生活。一起來汲取這個品牌的成功之道吧！
+					&nbsp;
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend><strong>報名填寫</strong></legend>
+		<p>
+			性別 :
+			<label for="male">男</label>
+			<input type="radio" name="sex"  value="male" />
+			<label for="female">女</label>
+			<input type="radio" name="sex"  value="female" />
+		</p>
+		<p>
+			<label for="name">姓名 :</label>
+			<!-- 文字框-->
+			<input cols="10" rows="1"   placeholder="莉莉安"  maxlength="10" required/input>
+		</p>
+		<p>學院：
+			<!--<fieldset> </fieldset>-->
+			<select>
+				<option value="liberal arts" >文學院</option>
+				<option value="science">理學院 </option>
+				<option value="law">法學院</option>
+				<option value="commerse">商學院</option>
+				<option value="foreign languages and literature">外國語文學院</option>
+				<option value="international affairs">國際事務學院</option>
+				<option value="social sciences">社會科學學院</option>
+				<option value="education">教育學院</option>
+				<option value="communication">傳播學院</option>
+			</select>
+		</p>
+		<p>		
+			<label for="cellphone">手機 :</label>
+			<input name="phone" type="text" id="phone" placeholder="Your phone" maxlength="10" required pattern="[0-9]{10}"/>
+		</p>
+		<p>
+			<label for="email">Email:</label>
+			<!-- 輸入框 type, name, id, value, tabindex, password-->
+			<input name="email" type="email" id="email"  placeholder="you@somewhere.com" required/>
+		</p>
+		<p>
+			<label for="birthday">生日 :</label>
+			<!-- 文字框-->
+			<input cols="10" rows="1"   placeholder="201XX6/03/07"  maxlength="11" /input>
+		</p>
+	</fieldset>
+	<div>
+		<input type="submit" value="送出" />
+	</div>
+	<footer>
+		<hr>
+		© 2016 Web Programming HW1 designed by David Lee。
+	</footer>	
+</body>
+</html>
